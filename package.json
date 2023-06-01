@@ -1,6 +1,6 @@
 {
-  "name": "node-sysstat",
-  "version": "1.0.0",
+  "name": "node-sysstat-arm",
+  "version": "1.0.1",
   "description": "Node system statistic",
   "main": "index.js",
   "dependencies": {
@@ -11,9 +11,9 @@
     "mocha": "^5.1.1"
   },
   "scripts": {
-    "install": "./scripts/build.sh",
+    "install": "arch=$(arch) & node-gyp rebuild --arch=$(arch)",
     "test": "mocha",
-    "build": "./scripts/build.sh",
+    "build": "arch=$(arch) & node-gyp rebuild --arch=$(arch)",
     "clean": "node-gyp clean"
   },
   "files": [
@@ -25,12 +25,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://git.sbis.ru/explain.sbis.ru/node-sysstat.git"
+    "url": "git+https://github.com/severuykhin/node-sysstat.git"
   },
   "author": {
-    "name": "Maksim Gorkov",
-    "email": "mgorkov@gmail.com",
-    "url": "http://github.com/MGorkov"
+    "name": "Igor Severuykhin",
+    "email": "severuykhin.igor@gmail.com",
+    "url": "https://github.com/severuykhin"
   },
   "keywords": [
     "nodejs",
