@@ -19,7 +19,3 @@ class CpuLoad : public Napi::ObjectWrap<CpuLoad> {
 };
 
 #endif
-
-#if !RUSAGE_THREAD
-  #define RUSAGE_THREAD 0
-#endif
