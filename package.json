@@ -1,6 +1,6 @@
 {
   "name": "node-sysstat-arm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node system statistic",
   "main": "index.js",
   "dependencies": {
